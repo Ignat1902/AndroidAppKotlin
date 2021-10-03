@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Convertation">
+
+    <Spinner
+        android:id="@+id/spinner_fist_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edit_fist_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/spinner_fist_currency"
+        android:layout_toRightOf="@+id/spinner_fist_currency"
+        android:minHeight="48dp"
+        android:text="1 000 000" />
+
+    <Spinner
+        android:id="@+id/spinner_last_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swapButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_fist_value"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/spinner_last_currency"
+        android:minHeight="48dp"
+        android:text="1 000 000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/swapButton"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_fist_currency"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        tools:ignore="SpeakableTextPresentCheck" />
+</RelativeLayout>

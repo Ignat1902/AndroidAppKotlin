@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="text_button_rate">Курсы валют</string>
+    <string name="text_button_metal">Курсы металлов</string>
+</resources>
