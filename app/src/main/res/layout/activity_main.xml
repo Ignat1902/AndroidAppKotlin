@@ -22,9 +22,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/buttton_style"
-            android:drawableEnd="@drawable/converner_button_image"
             android:drawableRight="@drawable/converner_button_image"
             android:padding="30dp"
             android:text="Конвертировать"
@@ -40,9 +39,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             android:background="@drawable/buttton_style"
-            android:drawableEnd="@drawable/rate_button_image"
             android:drawableRight="@drawable/rate_button_image"
-            android:padding="50dp"
+            android:padding="10dp"
             android:text="@string/text_button_rate" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -53,11 +51,30 @@
             android:textSize="20sp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:layout_marginBottom="40dp"
+
             android:background="@drawable/buttton_style"
             android:drawableEnd="@drawable/metal_button_image"
             android:drawableRight="@drawable/metal_button_image"
             android:padding="20dp"
             android:text="@string/text_button_metal" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crip_rate_btn"
+            android:layout_width="315dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttton_style"
+            android:padding="20dp"
+            android:text="Курс криптовалют" />
+        <TextView
+            android:textColor="@color/black"
+            android:text="Version: 1.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        </TextView>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

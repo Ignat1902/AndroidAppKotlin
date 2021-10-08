@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
 
         val btn_kurs: Button = findViewById(R.id.currency_rate_btn)
         val btn_metal: Button = findViewById(R.id.metal_rate_btn)
+        var btn_crip: Button = findViewById(R.id.crip_rate_btn)
 
         btn.setOnClickListener{
             val active = Intent(this,Convertation::class.java)
@@ -34,6 +35,11 @@ import androidx.appcompat.app.AppCompatActivity
 
         btn_metal.setOnClickListener{
             val activ = Intent(this,metals_exchange_rate::class.java)
+            startActivity(activ)
+        }
+
+        btn_crip.setOnClickListener{
+            val activ = Intent(this,currency_exchange_rate::class.java)
             startActivity(activ)
         }
 

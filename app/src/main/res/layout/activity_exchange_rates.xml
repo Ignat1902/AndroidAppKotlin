@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exchange_rates"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Актуальные курсы валют"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:background="@drawable/ramka"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/time_1"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Время:">
+    </TextView>
+
+    <TextView
+        android:id="@+id/time_2"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Последнее время:">
+    </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/usa">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_USD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="USD" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_USD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/eur">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_EUR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="EUR" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_EUR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gbp">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_GBP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="GBP" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_GBP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chf">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_CHF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CHF" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_CHF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/jp">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_JPY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="JPY" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_JPY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/uah">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_UAH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="UAH" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_UAH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/cad">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_CAD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CAD" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_CAD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pln">
+        </ImageView>
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_PLN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="PLN" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_PLN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loaging.." />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

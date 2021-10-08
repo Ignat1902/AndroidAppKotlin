@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Exchange_rates"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <TextView
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Актуальный курс криптовалют"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:background="@drawable/ramka"
+        android:id="@+id/time_crip"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Время последнего обновления: "
+        >
+    </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_BTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="BTC" />
+
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_ETH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ETH" />
+
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_XRP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ETH" />
+
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_BCH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="BCH" />
+
+
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_LTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="LTC" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/BTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bitcoin" />
+
+                <TextView
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/ETH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ethereum" />
+
+                <TextView
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/XRP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ripple" />
+
+                <TextView
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/BCC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bitcoin-cash" />
+
+
+                <TextView
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/LTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Litecoin" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rate_BTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rate_ETH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Loading..."/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rate_XRP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Loading..." />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rate_BCC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Loading..." />
+
+
+                <TextView
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_rate_LTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Loading..." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

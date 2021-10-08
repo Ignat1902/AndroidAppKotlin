@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exchange_rates"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Актуальные курсы металлов"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:background="@drawable/ramka"
+        android:id="@+id/time_metal"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Время: Loading..."
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_AU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XAU" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/AU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Золото" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_AU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_AG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XAG" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/AG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Серебро" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_AG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_PT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XPT" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/PT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Платина" />
+        <TextView
+
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_PT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_PD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XPD" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/PD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Палладий" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_PD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_CU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XCU" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/CU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Медь" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_CU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_ALU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ALU" />
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/ALU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Алюминий"
+             />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_ALU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_NI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="NI" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/NI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Никель" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_NI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_ZNC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ZNC" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/ZNC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Цинк" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_ZNC"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_TIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TIN" />
+        <TextView
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/TIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Олово" />
+        <TextView
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_rate_TIN"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loading..." />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
