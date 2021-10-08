@@ -11,51 +11,171 @@
         android:id="@+id/spinner_fist_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Spinner
+        android:background="#0000"
+        android:id="@+id/spinner_fist_currency2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
         android:minHeight="48dp"
         android:padding="10dp" />
 
     <EditText
         android:id="@+id/edit_fist_value"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
         android:layout_toEndOf="@+id/spinner_fist_currency"
         android:layout_toRightOf="@+id/spinner_fist_currency"
+        android:background="@android:color/transparent"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:maxLines="1"
         android:minHeight="48dp"
-        android:text="1 000 000" />
+        android:padding="10dp"
+        android:text="1"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edit_fist_value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/spinner_fist_currency"
+        android:layout_toRightOf="@+id/spinner_fist_currency"
+        android:background="@android:color/transparent"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="1"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/edit_fist_value2"
+        android:layout_alignLeft="@+id/edit_fist_value2"
+        android:layout_alignBottom="@+id/edit_fist_value2"
+        android:background="@drawable/textlines" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/edit_fist_value"
+        android:layout_alignLeft="@+id/edit_fist_value"
+        android:layout_alignBottom="@+id/edit_fist_value"
+        android:background="@drawable/textlines" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/edit_last_value"
+        android:layout_alignLeft="@+id/edit_last_value"
+        android:layout_alignBottom="@+id/edit_last_value"
+        android:background="@drawable/textlines" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignStart="@+id/edit_last_value2"
+        android:layout_alignLeft="@+id/edit_last_value2"
+        android:layout_alignBottom="@+id/edit_last_value2"
+        android:background="@drawable/textlines" />
+
+    <View
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/spinner_last_currency"
+        android:background="@drawable/textlines" />
 
     <Spinner
+        android:background="#0000"
         android:id="@+id/spinner_last_currency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/swapButton"
+        android:layout_below="@+id/spinner_fist_currency"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:minHeight="48dp"
         android:padding="10dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_fist_value"
-        android:layout_marginTop="110dp"
-        android:layout_toRightOf="@id/spinner_last_currency"
-        android:minHeight="48dp"
-        android:text="1 000 000" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/swapButton"
-        style="@style/ButtonStyle"
+    <Spinner
+        android:id="@+id/spinner_last_currency2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner_fist_currency"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_popup_sync"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_below="@+id/spinner_fist_currency2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/edit_last_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_fist_value"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/spinner_last_currency"
+        android:layout_toRightOf="@id/spinner_last_currency"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="1"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/edit_last_value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_fist_value2"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/spinner_last_currency"
+        android:layout_toRightOf="@id/spinner_last_currency"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Конвертировать валюты в рубли"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_last_currency"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:text="Конвертировать рубли в валюты"
+        android:textSize="22sp" />
+
 </RelativeLayout>

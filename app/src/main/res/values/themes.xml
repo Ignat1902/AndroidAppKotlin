@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.CurrencyConverter" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -19,7 +20,16 @@
         <item name="android:textSize">15sp</item>
         <item name="android:padding">10dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">@color/purple_500</item>
+        <item name="android:background">@color/white</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 </resources>

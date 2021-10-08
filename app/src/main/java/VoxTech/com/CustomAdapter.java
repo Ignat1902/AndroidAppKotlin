@@ -1,7 +1,6 @@
 package VoxTech.com;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +10,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
-import java.util.Collections;
-import java.util.List;
 
 public class CustomAdapter extends ArrayAdapter<String> {
     Context context;
